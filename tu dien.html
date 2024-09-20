@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p2>nhap tu:</p2>
+<input type="text" id="string">
+<button onClick="translate1()">dich</button>
+<p id="result"></p>
+<script>
+    let arrVi = ['den', 'hong', 'xanh']
+    let arrEng = ['black', 'pink', 'blue']
+    function indexOf (arr,key) {
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i] == key) {
+                return i;
+
+            }
+        }
+        return -1;
+    }
+    function translate1() {
+        let key = document.getElementById("string").value
+        let index = indexOf(arrEng, key);
+        if (index !== -1) {
+            document.getElementById("result").innerText = arrVi[index]
+        } else{
+            document.getElementById("result").innerText = "loi";
+        }
+    }
+
+
+</script>
+
+</body>
+</html>

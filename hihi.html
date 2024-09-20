@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let value = +prompt("enter a number");
+    let numbers =  [1,2,3,4];
+    let index = -1;
+    for (let i = 0; i < numbers.length; i++) {
+        if (value == numbers[i]) {
+            index = i;
+        }
+    }
+    if(index>-1){
+        alert("Value " + value + "found at " + index);
+    }
+    else {
+        alert("Value " + value + " not found");
+    }
+
+
+
+
+</script>
+
+</body>
+</html>
